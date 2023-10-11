@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     // Logique d'authentification Login
     const handleLogin = async (email: string, password: string) => {
 
-        const response = await fetch("http://localhost:3000/login", {
+        const response = await fetch("https://backend-90lv.onrender.com/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email, password }),
@@ -42,7 +42,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
     // Logique d'authentification Register
     const handleRegister = async (email: string, password: string, firstName: string, lastName: string) => {
-        const response = await fetch("http://localhost:3000/signup", {
+        const response = await fetch("https://backend-90lv.onrender.com/signup", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email, password, firstName, lastName }),

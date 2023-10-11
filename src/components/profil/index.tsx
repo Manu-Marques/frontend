@@ -14,7 +14,7 @@ export default function Profil() {
     React.useEffect(() => {
         const fetchUserProfile = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/user/${id}`);
+                const response = await fetch(`https://backend-90lv.onrender.com/user/${id}`);
                 if (response.ok) {
                     const userProfileData = await response.json();
                     setUserProfileData(userProfileData);

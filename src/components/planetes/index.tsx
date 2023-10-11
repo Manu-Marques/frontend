@@ -45,7 +45,7 @@ export default function PlanetesList() {
     const [cards, setCards] = useState<CardProps[]>([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/planetes')
+        fetch('https://backend-90lv.onrender.com/planetes')
             .then(response => response.json())
             .then(data => setCards(data));
     }, [])

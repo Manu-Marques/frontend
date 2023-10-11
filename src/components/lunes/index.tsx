@@ -49,7 +49,7 @@ export default function LunesList() {
     const [cards, setCards] = useState<CardProps[]>([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/lunes')
+        fetch('https://backend-90lv.onrender.com/lunes')
             .then(response => response.json())
             .then(data => setCards(data));
     }, [])

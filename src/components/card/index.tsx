@@ -29,7 +29,7 @@ export default function Card() {
 
     const [cards, setCards] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:3000/data')
+        fetch('https://backend-90lv.onrender.com/data')
             .then(response => response.json())
             .then(data => setCards(data));
     }, [])

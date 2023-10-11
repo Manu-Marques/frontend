@@ -3,7 +3,7 @@ import {useState } from 'react';
 export default function Data() {
     const [data, setData] = useState<any[]>([]);
 
-    fetch('http://localhost:3000/lunes')
+    fetch('https://backend-90lv.onrender.com/lunes')
         .then(response => response.json())
         .then(data => setData(data));
 
