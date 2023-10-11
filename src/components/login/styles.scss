@@ -1,0 +1,64 @@
+.container__login {
+  position: relative;
+  width: 350px;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  
+  &__title {
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__email,
+  &__password {
+    margin-top: 10px;
+    color: black;
+  }
+
+  &__forgot{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__email__input,
+  &__password__input {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  &__submit {
+    font-size: 1em;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &__submit:hover {
+    background-color: #0069d9;
+  }
+
+  &__message {
+    color: #ff0000;
+    text-align: center;
+  }
+}
+
+

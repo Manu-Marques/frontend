@@ -1,0 +1,66 @@
+.container__register {
+  position: relative;
+  width: 350px;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+
+
+  &__title {
+    text-align: center;
+    color: black;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__firstName,
+  &__lastName,
+  &__email,
+  &__password,
+  &__confirmPassword {
+    color: black;
+    margin-bottom: 5px;
+  }
+
+  &__firstName__input,
+  &__lastName__input,
+  &__email__input,
+  &__email__input,
+  &__password__input,
+  &__confirmPassword__input {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  &__submit {
+    font-size: 1em;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &__submit:hover {
+    background-color: #0069d9;
+  }
+
+  &__message {
+    color: #ff0000;
+    text-align: center;
+  }
+}
+
+
+
